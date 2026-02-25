@@ -9,7 +9,7 @@
   home.packages = [ pkgs.dconf ];
   home.username = "zach";
   home.homeDirectory = "/home/zach";
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
   home.sessionVariables = {
     EDITOR = "nvim";
   };
@@ -19,17 +19,18 @@
     #  nixvim.homeManagerModules.nixvim
   ];
 
-  nixpkgs = {
-    overlays = [
-      inputs.self.overlays.additions
-      inputs.self.overlays.modifications
-      inputs.self.overlays.unstable-packages
-    ];
-  };
+  #  Using Global Packages
 
-  config = {
-    allowUnfree = true;
-  };
+  #  nixpkgs = {
+  #  overlays = [
+  #    inputs.self.overlays.additions
+  #    inputs.self.overlays.modifications
+  #    inputs.self.overlays.unstable-packages
+  #  ];
+  #  config = {
+  #    allowUnfree = true;
+  #  };
+  #};
 
   xdg = {
     userDirs = {
