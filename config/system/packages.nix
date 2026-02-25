@@ -3,8 +3,9 @@
   pkgs,
   lib,
   ...
-}: {
-  nixpkgs.config.permittedInsecurePackages = ["libsoup-2.74.3"];
+}:
+{
+  nixpkgs.config.permittedInsecurePackages = [ "libsoup-2.74.3" ];
   environment.systemPackages = with pkgs; [
     (discord.override {
       withVencord = true;
@@ -57,7 +58,6 @@
     p7zip
     protontricks
     #     qt5.full
-    kdePackages.wayqt
     #     kdePackages.waylib
     kdePackages.wayland-protocols
     kdePackages.syntax-highlighting
@@ -86,7 +86,6 @@
     kdePackages.qt6ct
     kdePackages.qt5compat
     qtcreator
-    qt6.qtwayland
     curl
     zenity
     jq
