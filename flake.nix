@@ -55,11 +55,11 @@
 
       formatter.x86_64-linux = inputs.alejandra.packages.x86_64-linux.default;
 
-      overlays = import ./overlays { inherit inputs; };
+      #overlays = import ./overlays { inherit inputs; };
 
-      nixosModules = import ./modules/nixos;
+      #nixosModules = import ./modules/nixos;
 
-      homeManagerModules = import ./modules/home-manager;
+      #homeManagerModules = import ./modules/home-manager;
 
       nixosConfigurations = {
         "${hostname}" = nixpkgs.lib.nixosSystem rec {
