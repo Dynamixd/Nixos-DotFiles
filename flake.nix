@@ -2,12 +2,12 @@
   description = "Zachs Flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    #    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    #    nixpkgs = {
-    #  type = "indirect";
-    #  id = "nixpkgs";
-    #};
+    nixpkgs = {
+      type = "indirect";
+      id = "nixpkgs";
+    };
 
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
