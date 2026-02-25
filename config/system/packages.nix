@@ -90,8 +90,6 @@
     zenity
     jq
     opentrack
-    gcc
-    cmake
     fd
     lazygit
     wget
