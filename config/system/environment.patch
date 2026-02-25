@@ -1,0 +1,29 @@
+diff --git a/gamescope-session b/gamescope-session
+index 1fea3be..b41e819 100755
+--- a/gamescope-session
++++ b/gamescope-session
+@@ -245,6 +245,11 @@ else
+ 	echo >&2 "!! Failed to claim global gamescope stats session"
+ fi
+ 
++# Jovian NixOS environment overrides hook
++if test -e /etc/xdg/gamescope-session/environment; then
++       . /etc/xdg/gamescope-session/environment;
++fi
++
+ read_gamescope_env() {
+ 	if read -r -t 3 response_x_display response_wl_display <> "$socket"; then
+ 		export DISPLAY="$response_x_display"
+diff --git a/steam-launcher b/steam-launcher
+index d574495..d205026 100644
+--- a/steam-launcher
++++ b/steam-launcher
+@@ -1,6 +1,7 @@
+ #!/bin/bash
+ 
+-steamargs=("-steamos3" "-steampal" "-steamdeck" "-gamepadui")
++# Jovian: remove -steamdeck here so we can set it in the wrapper instead
++steamargs=("-gamepadui")
+ if [[ -x $HOME/devkit-game/devkit-steam ]]; then
+ 	exec "$HOME"/devkit-game/devkit-steam "${steamargs[@]}"
+ else
