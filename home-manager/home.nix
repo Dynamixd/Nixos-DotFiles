@@ -1,11 +1,12 @@
 {
+  inputs,
+  lib,
   config,
   pkgs,
-  inputs,
-  username,
   ...
-}: {
-  home.packages = [pkgs.dconf];
+}:
+{
+  home.packages = [ pkgs.dconf ];
   home.username = "zach";
   home.homeDirectory = "/home/zach";
   home.stateVersion = "25.05";
@@ -14,9 +15,21 @@
   };
 
   imports = [
-    ./config/home
+    ../config/home
     #  nixvim.homeManagerModules.nixvim
   ];
+
+  nixpkgs = {
+    overlays = [
+      inputs.self.overlays.additions
+      inputs.self.overlays.modifications
+      inputs.self.overlays.unstable-packages
+    ];
+  };
+
+  config = {
+    allowUnfree = true;
+  };
 
   xdg = {
     userDirs = {
@@ -26,5 +39,7 @@
   };
 
   programs.home-manager.enable = true;
+
+  systemd.user.startServices = "sd-switch";
   #  programs.nixvim.enable = true;
 }
