@@ -39,14 +39,6 @@
       "dmask=0077"
     ];
   };
-  fileSystems."/Shared" = {
-    device = "/dev/disk/by-uuid/2947B9D34DB7DF90";
-    fsType = "ntfs-3g";
-    options = [
-      "rw"
-      "uid=1000"
-    ];
-  };
 
   swapDevices = [
     { device = "/dev/disk/by-uuid/203f7b4b-eac2-46d6-8c70-3b157213c8f8"; }

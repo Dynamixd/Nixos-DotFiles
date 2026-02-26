@@ -15,4 +15,12 @@
     openrazer-daemon
     polychromatic
   ];
+  fileSystems."/Shared" = {
+    device = "/dev/disk/by-uuid/2947B9D34DB7DF90";
+    fsType = "ntfs-3g";
+    options = [
+      "rw"
+      "uid=1000"
+    ];
+  };
 }
