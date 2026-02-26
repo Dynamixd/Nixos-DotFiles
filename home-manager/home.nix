@@ -15,7 +15,7 @@
   };
 
   imports = [
-    ../config/home
+    ./packages
     #  nixvim.homeManagerModules.nixvim
   ];
 
