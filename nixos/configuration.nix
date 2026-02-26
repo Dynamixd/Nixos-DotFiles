@@ -26,7 +26,6 @@
       "wheel"
       "openrazer"
     ];
-    autoLogin = true;
   };
 
   nix = {
