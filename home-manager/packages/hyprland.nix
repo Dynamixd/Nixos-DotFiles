@@ -4,15 +4,18 @@
   lib,
   inputs,
   ...
-}: {
+}:
+{
+
   wayland.windowManager.hyprland = with lib; {
     enable = true;
     xwayland.enable = true;
     systemd.enable = true;
-    extraConfig = let
-      modifier = "SUPER";
-      modifier2 = "ALT";
-    in
+    extraConfig =
+      let
+        modifier = "SUPER";
+        modifier2 = "ALT";
+      in
       concatStrings [
         ''
 

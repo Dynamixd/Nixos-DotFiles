@@ -47,25 +47,10 @@
     };
   };
 
-  environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal
-    ];
-    configPackages = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal
-    ];
-  };
-
-  # Remove
   programs.hyprland.enable = true;
-  programs.firefox.enable = true;
   programs.xwayland.enable = true;
+
+  environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
 
   #     Testing system versions unstable
   system.stateVersion = "26.05";

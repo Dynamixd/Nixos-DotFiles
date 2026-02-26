@@ -25,17 +25,14 @@
     python3
     unzip
     ripgrep
-    wayclip
     pavucontrol
     networkmanager
     eww
     heroic
     godot
     blender
-    # krita
     gh
     obsidian
-    #      aylurs-gtk-shell-git
     wireplumber
     libgtop
     bluez
@@ -52,47 +49,15 @@
     vesktop
     r2modman
     killall
-    gupnp
-    upnp-router-control
     gamescope
     p7zip
     protontricks
-    #     qt5.full
-    #     kdePackages.waylib
     kdePackages.wayland-protocols
-    kdePackages.syntax-highlighting
-    kdePackages.sonnet
-    kdePackages.qxlsx
-    kdePackages.qwt
-    kdePackages.qwlroots
-    kdePackages.quazip
-    kdePackages.qtwebview
-    kdePackages.qtwebsockets
     kdePackages.qtwayland
-    kdePackages.qtwebengine
-    kdePackages.qtwebchannel
-    kdePackages.qtutilities
-    kdePackages.qttools
-    #     kdePackages.qttranslations
-    #     kdePackages.qtsvg
-    #     kdePackages.qtspell
-    #     kdePackages.qtspeech
-    #     kdePackages.qtshadertools
-    #     kdePackages.qtserialport
-    #     kdepackages.qtserialbus
-    #      kdePackages.qtsensors
-    #      kdePackages.qtscxml
     kdePackages.qt6gtk2
     kdePackages.qt6ct
     kdePackages.qt5compat
-    qtcreator
     curl
-    zenity
-    jq
-    opentrack
-    fd
-    lazygit
-    wget
     alejandra
   ];
 }
