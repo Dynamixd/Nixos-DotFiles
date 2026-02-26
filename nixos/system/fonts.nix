@@ -1,0 +1,21 @@
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.noto
+    nerd-fonts.iosevka
+    texlivePackages.fontawesome
+    terminus_font_ttf
+    corefonts
+    vista-fonts
+  ];
+}

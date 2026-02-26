@@ -2,9 +2,11 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     #     ./bash.nix
+    ./xdg.nix
     ./kitty.nix
     ./waybar.nix
     ./zsh.nix
