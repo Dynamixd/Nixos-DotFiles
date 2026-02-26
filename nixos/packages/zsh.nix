@@ -91,6 +91,5 @@
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
     };
-    history.size = 10000;
   };
 }
