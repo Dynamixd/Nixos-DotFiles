@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     ./packages.nix
     ./greetd.nix

@@ -32,7 +32,7 @@
     heroic
     godot
     blender
-    krita
+    # krita
     gh
     obsidian
     #      aylurs-gtk-shell-git
