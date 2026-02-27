@@ -7,9 +7,6 @@
 {
   nixpkgs.config.permittedInsecurePackages = [ "libsoup-2.74.3" ];
   environment.systemPackages = with pkgs; [
-    (discord.override {
-      withVencord = true;
-    })
     easyeffects
     jdk21
     kdePackages.dolphin
@@ -28,11 +25,7 @@
     pavucontrol
     networkmanager
     eww
-    heroic
-    godot
-    blender
     gh
-    obsidian
     wireplumber
     libgtop
     bluez
@@ -45,9 +38,6 @@
     libsoup_3
     gtk2-x11
     gtk2
-    logiops
-    vesktop
-    r2modman
     killall
     gamescope
     p7zip

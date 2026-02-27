@@ -10,6 +10,5 @@
     ./zsh.nix
     ./steam.nix
     ./wine.nix
-    ./firefox.nix
   ];
 }

@@ -16,6 +16,7 @@
     ./hyprpanel.nix
     ./rofi.nix
     ./nixvim-config
+    ./packages.nix
     #      ./nixvim.nix
   ];
 }
