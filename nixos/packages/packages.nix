@@ -41,7 +41,6 @@
     killall
     gamescope
     p7zip
-    protontricks
     kdePackages.wayland-protocols
     kdePackages.qtwayland
     kdePackages.qt6gtk2
@@ -49,5 +48,8 @@
     kdePackages.qt5compat
     curl
     alejandra
+    wine
+    winetricks
+    protontricks
   ];
 }

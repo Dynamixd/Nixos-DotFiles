@@ -16,6 +16,7 @@
 
   imports = [
     ./packages
+    inputs.nixcord.homeModules.nixcord
     #  nixvim.homeManagerModules.nixvim
   ];
 

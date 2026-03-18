@@ -32,6 +32,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixcord.url = "github:FlameFlag/nixcord";
+
   };
 
   outputs =
