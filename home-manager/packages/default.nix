@@ -17,6 +17,7 @@
     ./rofi.nix
     ./nixvim-config
     ./packages.nix
+    ./nixcord.nix
     #      ./nixvim.nix
   ];
 }
