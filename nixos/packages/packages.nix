@@ -51,5 +51,6 @@
     wine
     winetricks
     protontricks
+    htop
   ];
 }

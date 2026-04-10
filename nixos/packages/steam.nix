@@ -2,7 +2,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   programs = {
     steam = {
       enable = true;
@@ -10,7 +11,7 @@
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
       gamescopeSession.enable = true;
-      extraCompatPackages = [pkgs.proton-ge-bin];
+      extraCompatPackages = [ pkgs.proton-ge-bin ];
     };
 
     gamescope = {
@@ -20,6 +21,13 @@
         "--rt"
         "--expose-wayland"
       ];
+
     };
+
+    gamemode = {
+      enable = true;
+      enableRenice = true;
+    };
+
   };
 }
